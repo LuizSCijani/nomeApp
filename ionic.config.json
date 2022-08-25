@@ -1,0 +1,7 @@
+{
+  "name": "nomeApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
