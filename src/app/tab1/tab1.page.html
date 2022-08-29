@@ -12,6 +12,26 @@
       <ion-title size="large">Tab 1</ion-title>
     </ion-toolbar>
   </ion-header>
+  
+  <div id="container">
+    <ion-item>
+      <ion-label position="floating">Lado A</ion-label>
+      <ion-input [(ngModel)]="ladoA" nome="ladoA"></ion-input>
+    </ion-item>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+    <ion-item>
+      <ion-label position="floating">Lado B</ion-label>
+      <ion-input [(ngModel)]="ladoB" nome="ladoB"></ion-input>
+    </ion-item> 
+
+    <ion-item>
+      <ion-label position="floating">Lado C</ion-label>
+      <ion-input [(ngModel)]="ladoC" nome="ladoC"></ion-input>
+    </ion-item>
+
+    <ion-button (click)="Calculo()" color="danger" shape="round">Calcular</ion-button>
+    <p>{{ resultado }}</p>
+    <strong> {{ mensagem}} </strong>
+  
+  </div>
 </ion-content>
